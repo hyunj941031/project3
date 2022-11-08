@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <strong>Project3</strong>
+        </a>
+      </div>
+    </div>
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Hotel Finder</h1>
+          <br>
+          <h4 class="fw">입력사항</h4>
+          <br>
+          <form action='./hotels' name="info" method="POST">
+            <label for="select-city">도시 :</label>
+            <select name='city' id="select-city">
+              <option value="su">서울</option>
+              <option value="bs">부산</option>
+              <option value="jj">제주</option>
+              <option value="gw">강원</option>
+              <option value="ic">인천</option>
+              <option value="dg">대구</option>
+              <option value="us">울산</option>
+              <option value="gn">경남</option>
+              <option value="gb">경북</option>
+              <option value="gj">광주</option>
+              <option value="jn">전남</option>
+              <option value="jb">전북</option>
+              <option value="dj">대전</option>
+              <option value="cn">충남</option>
+              <option value="cb">충북</option>
+            </select>
+
+            <br>
+            <label>최소등급 :</label>
+            <input name="grade" id="input-1" type="radio" checked/>
+            <label for="input-1">특1급</label>
+            <input name="grade" id="input-2" type="radio"/>
+            <label for="input-2">특2급</label>
+            <input name="grade" id="input-3" type="radio"/>
+            <label for="input-3">1급</label>
+            <input name="grade" id="input-4" type="radio"/>
+            <label for="input-4">2급</label>
+            <input name="grade" id="input-5" type="radio"/>
+            <label for="input-5">3급</label>
+            <input name="grade" id="input-6" type="radio"/>
+            <label for="input-6">기타</label>
+
+            <br>
+            <br>
+            <label>평점 :</label>
+            <input name="score" id="input-60" type="radio" checked/>
+            <label for="input-60">60</label>
+            <input name="score" id="input-70" type="radio"/>
+            <label for="input-70">70</label>
+            <input name="score" id="input-80" type="radio"/>
+            <label for="input-80">80</label>
+            <input name="score" id="input-90" type="radio"/>
+            <label for="input-90">90</label>
+
+            <br>
+            <label>리뷰 개수 :</label>
+            <input name="review" id="input-0" type="radio" checked/>
+            <label for="input-0">0</label>
+            <input name="review" id="input-100" type="radio"/>
+            <label for="input-100">100</label>
+            <input name="review" id="input-500" type="radio"/>
+            <label for="input-500">500</label>
+            <input name="review" id="input-1000" type="radio"/>
+            <label for="input-1000">1000</label>
+
+            <!-- <br>
+            <label>희망요일 :</label>
+            <input name="weekday" id="mt" type="checkbox" checked/>
+            <label for="mt">월~목</label>
+            <input name="friday" id="fri" type="checkbox"/>
+            <label for="fri">금</label>
+            <input name="saturday" id="sat" type="checkbox"/>
+            <label for="sat">토</label>
+            <input name="sunday" id="sun" type="checkbox"/>
+            <label for="sun">일</label> -->
+
+            <br>
+            <br>
+            <button type="submit">Find!</button>
+          </form>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 text-center container">
+      <h1></h1>
+
+    </section>
+  </body>
+</html>

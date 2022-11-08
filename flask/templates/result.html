@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+      td{
+        border-style: solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <strong>Project3</strong>
+        </a>
+      </div>
+    </div>
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+          <h1 class="fw-light">Good day to travel</h1>
+          <table border='3'>
+            <thead>
+              <th>호텔명</th>
+              <th>도시</th>
+              <th>세부지역</th>
+              <th>등급</th>
+              <th>평일(월~목) 최저가</th>
+              <th>평일(월~목) 날짜</th>
+              <th>금요일 최저가</th>
+              <th>금요일 날짜</th>
+              <th>토요일 최저가</th>
+              <th>토요일 날짜</th>
+              <th>일요일 최저가</th>
+              <th>일요일 날짜</th>
+            </thead>
+
+            <tr>
+              <td>{{result_sample[2]}}</td>
+              <td>{{result_sample[0]}}</td>
+              <td>{{result_sample[1]}}</td>
+              <td>{{result_sample[3]}}</td>
+              <td>{{result_sample[6]}}</td>
+              <td>{{result_sample[7]}}</td>
+              <td>{{result_sample[8]}}</td>
+              <td>{{result_sample[9]}}</td>
+              <td>{{result_sample[10]}}</td>
+              <td>{{result_sample[11]}}</td>
+              <td>{{result_sample[12]}}</td>
+              <td>{{result_sample[13]}}</td>
+            </tr>
+            <tr>
+              <td>Image</td>
+              <td><img src = "{{url_for('static', filename=iamge)}}"/></td>
+            </tr>
+          </table>
+
+          
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 text-center container">
+      <h1></h1>
+
+    </section>
+  </body>
+</html>
